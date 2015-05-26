@@ -16,14 +16,12 @@
 package com.fernandocejas.android10.sample.test.mapper;
 
 
-import com.fernandocejas.android10.sample.presentation.model.RoomList;
+import com.meuuh.chat.training.presentation.model.RoomList;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import junit.framework.TestCase;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.mock;

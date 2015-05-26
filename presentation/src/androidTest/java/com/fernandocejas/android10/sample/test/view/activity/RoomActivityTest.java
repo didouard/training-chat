@@ -18,8 +18,8 @@ package com.fernandocejas.android10.sample.test.view.activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase2;
-import com.fernandocejas.android10.sample.presentation.R;
-import com.fernandocejas.android10.sample.presentation.view.activity.RoomActivity;
+import com.meuuh.chat.training.presentation.R;
+import com.meuuh.chat.training.presentation.view.activity.RoomActivity;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;

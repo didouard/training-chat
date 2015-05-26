@@ -17,11 +17,10 @@ package com.fernandocejas.android10.sample.test.presenter;
 
 import android.content.Context;
 import android.test.AndroidTestCase;
-import com.fernandocejas.android10.sample.presentation.presenter.RoomPresenter;
-import com.fernandocejas.android10.sample.presentation.view.RoomView;
+import com.meuuh.chat.training.presentation.presenter.RoomPresenter;
+import com.meuuh.chat.training.presentation.view.RoomView;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import rx.Subscriber;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Matchers.any;

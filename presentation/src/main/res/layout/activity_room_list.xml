@@ -4,7 +4,7 @@
     >
 
   <fragment
-      android:name="com.fernandocejas.android10.sample.presentation.view.fragment.RoomListFragment"
+      android:name="com.meuuh.chat.training.presentation.view.fragment.RoomListFragment"
       android:id="@+id/fragmentRoomList"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
