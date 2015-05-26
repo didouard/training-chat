@@ -12,6 +12,7 @@ ext {
   androidCompileSdkVersion = 21
 
   //Libraries
+  parseVersion = '1.+'
   daggerVersion = '2.0'
   butterKnifeVersion = '6.0.0'
   recyclerViewVersion = '21.0.3'
@@ -32,6 +33,7 @@ ext {
 
 
   presentationDependencies = [
+      parseBolts:         "com.parse.bolts:bolts-android:${parseVersion}",
       daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
       dagger:             "com.google.dagger:dagger:${daggerVersion}",
       butterKnife:        "com.jakewharton:butterknife:${butterKnifeVersion}",

@@ -17,8 +17,8 @@ package com.fernandocejas.android10.sample.presentation.navigation;
 
 import android.content.Context;
 import android.content.Intent;
-import com.fernandocejas.android10.sample.presentation.view.activity.UserDetailsActivity;
-import com.fernandocejas.android10.sample.presentation.view.activity.UserListActivity;
+import com.fernandocejas.android10.sample.presentation.view.activity.RoomActivity;
+import com.fernandocejas.android10.sample.presentation.view.activity.RoomListActivity;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -38,9 +38,9 @@ public class Navigator {
    *
    * @param context A Context needed to open the destiny activity.
    */
-  public void navigateToUserList(Context context) {
+  public void navigateToRoomList(Context context) {
     if (context != null) {
-      Intent intentToLaunch = UserListActivity.getCallingIntent(context);
+      Intent intentToLaunch = RoomListActivity.getCallingIntent(context);
       context.startActivity(intentToLaunch);
     }
   }
@@ -50,9 +50,9 @@ public class Navigator {
    *
    * @param context A Context needed to open the destiny activity.
    */
-  public void navigateToUserDetails(Context context, int userId) {
+  public void navigateToUserDetails(Context context, String roomId) {
     if (context != null) {
-      Intent intentToLaunch = UserDetailsActivity.getCallingIntent(context, userId);
+      Intent intentToLaunch = RoomActivity.getCallingIntent(context, roomId);
       context.startActivity(intentToLaunch);
     }
   }

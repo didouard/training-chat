@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Android Clean Architecture</string>
-  <string name="url">http://www.android10.org/</string>
+  <string name="app_name">BeeLee</string>
+  <string name="url"></string>
 
-  <string name="activity_title_user_list">Users List</string>
-  <string name="activity_title_user_details">User Details</string>
+  <string name="activity_title_user_list">Room List</string>
+  <string name="activity_title_user_details">Room</string>
 
-  <string name="btn_text_load_data">Load Sample Data</string>
+  <string name="btn_text_load_data">Load data</string>
   <string name="btn_text_retry">Retry</string>
 
   <string name="view_text_email">Email:</string>
@@ -14,6 +14,14 @@
   <string name="view_text_description">Description:</string>
 
   <string name="string_content_description">Non accessible view</string>
+
+  <string name="parse_app_id">Gbte5uRYSGg3ohEsyPvIJO3Ja8GWy8Rop3OmQmZr</string>
+  <string name="parse_client_key">agMAq6IyHQpfD07plPHnNPt1F4jFtXKGA2ftSQhP</string>
+
+  <string name="message_hint">Say anything</string>
+  <string name="createRoom">Create Room</string>
+  <string name="profile_me">My Profile Pic</string>
+  <string name="profile_other">Other profile pic</string>
 
   //Exception messages
   <string name="exception_message_generic">There was an application error</string>

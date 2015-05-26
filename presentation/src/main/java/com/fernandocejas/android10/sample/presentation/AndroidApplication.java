@@ -16,9 +16,14 @@
 package com.fernandocejas.android10.sample.presentation;
 
 import android.app.Application;
+
+import com.fernandocejas.android10.sample.presentation.db.Message;
+import com.fernandocejas.android10.sample.presentation.db.Room;
 import com.fernandocejas.android10.sample.presentation.internal.di.components.ApplicationComponent;
 import com.fernandocejas.android10.sample.presentation.internal.di.components.DaggerApplicationComponent;
 import com.fernandocejas.android10.sample.presentation.internal.di.modules.ApplicationModule;
+import com.parse.Parse;
+import com.parse.ParseObject;
 
 /**
  * Android Main Application
@@ -29,13 +34,22 @@ public class AndroidApplication extends Application {
 
   @Override public void onCreate() {
     super.onCreate();
+    this.initParse();
     this.initializeInjector();
+
   }
 
   private void initializeInjector() {
     this.applicationComponent = DaggerApplicationComponent.builder()
         .applicationModule(new ApplicationModule(this))
         .build();
+  }
+
+  private void initParse() {
+    Parse.enableLocalDatastore(this);
+    ParseObject.registerSubclass(Room.class);
+    ParseObject.registerSubclass(Message.class);
+    Parse.initialize(this, getString(R.string.parse_app_id), getString(R.string.parse_client_key));
   }
 
   public ApplicationComponent getApplicationComponent() {
