@@ -43,8 +43,10 @@ dependencies {
   def presentationDependencies = rootProject.ext.presentationDependencies
   def presentationTestDependencies = rootProject.ext.presentationTestDependencies
 
-  compile presentationDependencies.parseBolts
-  compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+  compile project(':ParseLoginUI')
+
+  compile files('libs/Parse-1.9.1.jar')
+  compile files('libs/ParseCrashReporting-1.9.1.jar')
   compile 'com.squareup.picasso:picasso:2.5.0'
 
   apt presentationDependencies.daggerCompiler

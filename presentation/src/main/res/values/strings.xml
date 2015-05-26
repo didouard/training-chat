@@ -23,6 +23,8 @@
   <string name="profile_me">My Profile Pic</string>
   <string name="profile_other">Other profile pic</string>
 
+  <string name="reset_password">Reset password ?</string>
+
   //Exception messages
   <string name="exception_message_generic">There was an application error</string>
   <string name="exception_message_no_connection">There is no internet connection</string>
